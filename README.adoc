@@ -1,0 +1,75 @@
+= hugo-mod-simple-icons
+:toc:
+
+
+A https://gohugo.io/hugo-modules/theme-components/#readout[Hugo theme component] for https://github.com/simple-icons/simple-icons/[Simple Icons] , a free and open source icon set for popular brands.
+This module is created for Simple Icons v2.17.0 and above since https://github.com/golang/go/wiki/Modules#can-a-module-consume-a-v2-package-that-has-not-opted-into-modules-what-does-incompatible-mean[Go modules cannot be parsed unless the module is "proper"] (e.g., has a `go.mod` file).
+
+NOTE: The following example snippets are in TOML format.
+Be sure to convert it first into the appropriate format if you're using other than TOML.
+
+
+
+
+== Getting started
+
+As a prerequisite, you need Hugo v0.56 and above (as long as it has the Hugo module feature) and the latest version of https://golang.org/dl/[Go].
+
+First, you need to initialize your Hugo project as a Hugo module.
+This can be done by running `hugo mod init $HUGO_MODULE_PATH`.
+
+Then, you can import the Hugo module in your site config.
+
+[source, toml]
+----
+[[module.imports]]
+  path = "github.com/foo-dogsquared/hugo-mod-simple-icons"
+----
+
+You can also specify the tag by adding `@$TAG` at the end of the path.
+For more information, you can see https://github.com/golang/go/wiki/Modules#how-to-upgrade-and-downgrade-dependencies[how to specify Go modules] since Hugo modules are built on top of it.
+
+Next, get the dependency by running `hugo mod get` and to update the component, run `hugo mod get -u`.
+(You could also run the server [i.e., `hugo server`] to download the modules.)
+
+To get the list of icons, simply view the https://simpleicons.org/[website], https://github.com/simple-icons/simple-icons/tree/develop/icons[see the icons folder from the source itself], and/or search within the repo.
+
+
+=== Using it in the Hugo site
+
+Now that you have the theme component in the Hugo project, you have to actually use it.
+By default, the theme component has the following configuration:
+
+* Mounts the entire icon set at `assets/svg/simple-icons` for https://gohugo.io/hugo-pipes/introduction/[interacting with resources].
+From there, you can then get the icon with a simple `resources.Get`.
+
+* Places the Simple Icons dataset (`_data/simple-icons.json`) in https://gohugo.io/templates/data-templates/#the-data-folder[the data folder] where you can use it (at `$.Site.Data.simple-icons`) to create https://gohugo.io/templates/data-templates/[data templates].
+
+The following shows how to get an icon from the set.
+
+[source, go]
+----
+{{ $icon := resources.Get "svg/simple-icons/github.svg" }}
+{{ $icon.Content | safeHTML }}
+----
+
+
+
+
+== License
+
+The Hugo theme component is licensed under MIT license.
+Please see the link:./LICENSE[license file] for the full text.
+
+The Simple Icons icon set is licensed under https://creativecommons.org/publicdomain/zero/1.0/[Creative Commons Zero 1.0 Universal Public Domain].
+See the https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md[related file] for the full details.
+
+
+
+
+== Acknowledgements
+
+* The maintainers of https://github.com/simple-icons/[Simple Icons] for keeping the icon set top notch.
+* The team and community behind https://gohugo.io/[Hugo] for creating a great project that is maintained in top condition for a very long time.
+* The maintainers of https://github.com/gohugoio/hugo-mod-bootstrap-scss-v4[Bootstrap v4 Hugo module] as a template for the Hugo module thing.
+
