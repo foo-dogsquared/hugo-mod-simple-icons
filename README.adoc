@@ -3,7 +3,10 @@
 
 
 A https://gohugo.io/hugo-modules/theme-components/#readout[Hugo theme component] for https://github.com/simple-icons/simple-icons/[Simple Icons] , a free and open source icon set for popular brands.
-This module is created for Simple Icons v2.17.0 and above since https://github.com/golang/go/wiki/Modules#can-a-module-consume-a-v2-package-that-has-not-opted-into-modules-what-does-incompatible-mean[Go modules cannot be parsed unless the module is "proper"] (e.g., has a `go.mod` file).
+This module enables you to use the icons without getting the icons yourself.
+
+You can still use the icon set with NPM and seeing that Hugo is https://gohugo.io/news/0.75.0-relnotes/[getting more support for JavaScript-based workflows] (and https://discourse.gohugo.io/t/esbuild-looks-like-we-can-finally-get-solid-hugo-modules-support/28757[more in the future]).
+Even so, this module is good if you don't want to install additional tooling.
 
 NOTE: The following example snippets are in TOML format.
 Be sure to convert it first into the appropriate format if you're using other than TOML.
