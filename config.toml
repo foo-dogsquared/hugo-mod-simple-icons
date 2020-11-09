@@ -6,4 +6,4 @@
         target = "assets/svg/simple-icons"
       [[module.imports.mounts]]
         source = "_data"
-        target = "data/simple-icons.json"
+        target = "data"
