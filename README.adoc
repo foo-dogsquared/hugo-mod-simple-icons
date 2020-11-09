@@ -43,10 +43,10 @@ To get the list of icons, simply view the https://simpleicons.org/[website], htt
 Now that you have the theme component in the Hugo project, you have to actually use it.
 By default, the theme component has the following configuration:
 
-* Mounts the entire icon set at `assets/svg/simple-icons` for https://gohugo.io/hugo-pipes/introduction/[interacting with resources].
+* Icon set is available at `assets/svg/simple-icons` for https://gohugo.io/hugo-pipes/introduction/[interacting with resources].
 From there, you can then get the icon with a simple `resources.Get`.
 
-* Places the Simple Icons dataset (`_data/simple-icons.json`) in https://gohugo.io/templates/data-templates/#the-data-folder[the data folder] where you can use it (at `$.Site.Data.simple-icons`) to create https://gohugo.io/templates/data-templates/[data templates].
+* The Simple Icons dataset is available as (`data/simple-icons.json`) in https://gohugo.io/templates/data-templates/#the-data-folder[the data folder] where you can use it (at `$.Site.Data.simple-icons`) to create https://gohugo.io/templates/data-templates/[data templates].
 
 The following shows how to get an icon from the set.
 
