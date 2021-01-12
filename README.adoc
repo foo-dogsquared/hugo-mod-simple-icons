@@ -70,6 +70,26 @@ See the https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md[rel
 
 
 
+== Development guidelines
+
+Maintaining this module is quite simple.
+One of the main core tasks of maintaining this module is simply updating the module to use the latest version of the icon set.
+It can be done with `hugo mod get ${SIMPLE_ICONS_GIT_URL}@${COMMIT}` where the commit is the latest commit hash of the repository.
+Then tidy the related files with `hugo mod tidy` and you're done.
+Fortunately, this can be automated with simple tools and services like the link:https://docs.github.com/en/free-pro-team@latest/rest[GitHub API] and link:https://stedolan.github.io/jq/[jq] which I've created one in the link:./Makefile[Makefile].
+It does need link:https://curl.se/[curl], link:https://stedolan.github.io/jq/[jq], and link:https://www.gnu.org/software/make/[GNU Make] (of course) for this to work.
+
+The documentation uses link:https://asciidoctor.org/[Asciidoctor]-flavored Asciidoc as the format.
+The Asciidoctor toolchain is not necessary to install, you just need to know the formatting syntax of it.
+
+If you have link:https://nixos.org/[Nix] installed, you can easily set up the same development environment that I use by running `nix-shell shell.nix`.
+
+TIP: You can make setting up the development environment even easier with link:https://direnv.net/[direnv] along with Nix.
+Just add `echo "use nix" > .envrc && direnv allow` in the project root and you're good to go!
+
+
+
+
 == Acknowledgements
 
 * The maintainers of https://github.com/simple-icons/[Simple Icons] for keeping the icon set top notch.
