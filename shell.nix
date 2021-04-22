@@ -19,6 +19,7 @@ mkShell {
   buildInputs = [
     asciidoctor
     curl
+    go
     hugo
     gnumake
     jq
