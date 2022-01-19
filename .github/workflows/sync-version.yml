@@ -31,7 +31,7 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
           # Commit the update.
-          git add .
+          git add go.mod go.sum
           git commit --message "Sync to Simple Icons v${simple_icon_version}"
 
           # Add the tag.
