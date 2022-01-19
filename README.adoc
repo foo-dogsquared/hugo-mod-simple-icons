@@ -84,7 +84,7 @@ It does need link:https://curl.se/[curl], link:https://stedolan.github.io/jq/[jq
 The documentation uses link:https://asciidoctor.org/[Asciidoctor]-flavored Asciidoc as the format.
 The Asciidoctor toolchain is not necessary to install, you just need to know the formatting syntax of it.
 
-If you have link:https://nixos.org/[Nix] installed, you can easily set up the same development environment that I use by running `nix-shell shell.nix`.
+If you have link:https://nixos.org/[Nix] installed, you can easily set up the same development environment that I use by running `nix-shell shell.nix` or `nix develop` if you have Nix flakes feature enabled.
 
 TIP: You can make setting up the development environment even easier with link:https://direnv.net/[direnv] along with Nix.
 Just add `echo "use nix" > .envrc && direnv allow` in the project root and you're good to go!
