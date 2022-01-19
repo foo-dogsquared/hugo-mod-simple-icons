@@ -30,6 +30,8 @@ Then, you can import the Hugo module in your site config.
 ----
 
 You can also specify the tag by adding `@$TAG` at the end of the path.
+The versioning scheme of this module follows the project — e.g., for link:https://github.com/simple-icons/simple-icons/releases/tag/6.7.0[Simple Icons v6.7.0], you can find a version of the module that has "v6.7.0".
+The format of the tags of the module is "v${VERSION}".
 For more information, you can see https://github.com/golang/go/wiki/Modules#how-to-upgrade-and-downgrade-dependencies[how to specify Go modules] since Hugo modules are built on top of it.
 
 Next, get the dependency by running `hugo mod get` and to update the component, run `hugo mod get -u`.
