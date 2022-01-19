@@ -35,9 +35,9 @@ jobs:
           git commit --message "Sync to Simple Icons v${simple_icon_version}"
 
           # Add the tag.
-          git tag "${simple_icon_version}"
+          git tag "v${simple_icon_version}"
 
           # Push it into the current branch.
           git remote remove origin
           git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/foo-dogsquared/hugo-mod-simple-icons.git
-          git push --set-upstream origin master --follow-tags
+          git push --set-upstream origin master --tags
