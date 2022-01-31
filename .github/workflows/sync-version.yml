@@ -6,7 +6,7 @@ on:
   schedule:
     # We specifically set this following Simple Icon's GitHub workflow schedule:
     # 10 hours after release.
-    - cron: '0 10 * * 0' # 10:00 at every Sunday
+    - cron: '0 23 * * 3' # 23:00 at every Wednesday
 
 jobs:
   sync:
