@@ -2,4 +2,4 @@ module github.com/foo-dogsquared/hugo-mod-simple-icons
 
 go 1.15
 
-require github.com/simple-icons/simple-icons v0.0.0-20221127095304-74c9350944c6 // indirect
+require github.com/simple-icons/simple-icons v0.0.0-20221205125008-b4ea284901fb // indirect
