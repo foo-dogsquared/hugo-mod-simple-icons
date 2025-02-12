@@ -30,3 +30,5 @@ github.com/simple-icons/simple-icons v0.0.0-20250129175109-3a15f6d8f4d3 h1:HyzSJ
 github.com/simple-icons/simple-icons v0.0.0-20250129175109-3a15f6d8f4d3/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
 github.com/simple-icons/simple-icons v0.0.0-20250205184423-aba737b33ead h1:y8yn8ZYiCZGlSySdJixVMxplP3n+QSQq5bH4ZBEztJo=
 github.com/simple-icons/simple-icons v0.0.0-20250205184423-aba737b33ead/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
+github.com/simple-icons/simple-icons v0.0.0-20250212200118-52637c40f83f h1:TvfFLHvODDBnowV4WDjL0zzS/XTk7hs62F+TmXR3CTU=
+github.com/simple-icons/simple-icons v0.0.0-20250212200118-52637c40f83f/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
