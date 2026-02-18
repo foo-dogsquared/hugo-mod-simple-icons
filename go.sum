@@ -132,3 +132,5 @@ github.com/simple-icons/simple-icons v0.0.0-20260203130839-6c937be50b30 h1:OA169
 github.com/simple-icons/simple-icons v0.0.0-20260203130839-6c937be50b30/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
 github.com/simple-icons/simple-icons v0.0.0-20260211222707-9c8bf0d1c54a h1:pFNszMmeJSF9wdP/gqPcHMlqQjro9TQk69Q2yU2rISs=
 github.com/simple-icons/simple-icons v0.0.0-20260211222707-9c8bf0d1c54a/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
+github.com/simple-icons/simple-icons v0.0.0-20260215004912-9902c7c6a9ef h1:Ps27kSPL6nC0hKwcZjh3enPELFGxY5mLUDHH2RQ1m7k=
+github.com/simple-icons/simple-icons v0.0.0-20260215004912-9902c7c6a9ef/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
