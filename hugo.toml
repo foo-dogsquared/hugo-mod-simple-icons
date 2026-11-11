@@ -8,5 +8,5 @@
         source = "icons"
         target = "assets/svg/simple-icons"
       [[module.imports.mounts]]
-        source = "_data"
+        source = "data"
         target = "data"
